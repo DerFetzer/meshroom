@@ -113,6 +113,26 @@ meshroomPhotog = PlatformExecutable(
     "bin/meshroom_photogrammetry"
 )
 
+meshroomComp = PlatformExecutable(
+    "bin/meshroom_compute"
+)
+
+meshroomNewNode = PlatformExecutable(
+    "bin/meshroom_newNodeType"
+)
+
+meshroomStatistics = PlatformExecutable(
+    "bin/meshroom_statistics"
+)
+
+meshroomStat = PlatformExecutable(
+    "bin/meshroom_status"
+)
+
+meshroomSub = PlatformExecutable(
+    "bin/meshroom_submit"
+)
+
 setup(
     name="Meshroom",
     description="Meshroom",
@@ -127,5 +147,5 @@ setup(
     ],
     version=meshroom.__version__,
     options={"build_exe": build_exe_options},
-    executables=[meshroomExe, meshroomPhotog],
+    executables=[meshroomExe, meshroomPhotog, meshroomComp, meshroomNewNode, meshroomStatistics, meshroomStat, meshroomSub],
 )
